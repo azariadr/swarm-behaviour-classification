@@ -35,11 +35,11 @@ This repository contains an end-to-end Machine Learning and Deep Learning pipeli
 | **Bernoulli Naive Bayes** | With Sliding Window | 65.74% | 66.25% | 0.3375 |
 | **Gaussian HMM** | Without Sliding Window | 41.14% | 41.92% | 0.5808 |
 | **Gaussian HMM** | With Sliding Window | 54.80% | 55.56% | 0.4444 |
-| **Support Vector Classifier (SVC)** | Without Sliding Window (Linear) | **92.36%** | **90.13%** | **0.0987** |
-| **Support Vector Classifier (SVC)** | With Sliding Window (RBF) | 65.74% | 66.25% | 0.3375 |
+| **Support Vector Machine (SVM)** | Without Sliding Window (Linear) | **92.36%** | **90.13%** | **0.0987** |
+| **Support Vector Machine (SVM)** | With Sliding Window (RBF) | 65.74% | 66.25% | 0.3375 |
 | **LSTM Neural Network** | Without Sliding Window | 65.88% | 65.87% | 0.3413 |
 | **LSTM Neural Network** | With Sliding Window | 65.74% | 66.25% | 0.3375 |
 
 ### Key Takeaways:
-- **The Support Vector Classifier (SVC)** working directly on the PCA-reduced feature set yielded the highest classification metrics with **90.13% Test Accuracy**.
+- **The Support Vector Machine (SVM)** working directly on the PCA-reduced feature set yielded the highest classification metrics with **90.13% Test Accuracy**.
 - Sequential windowing using only historic target states ($t-1$ to $t-7$) resulted in lower accuracy, indicating that the multi-agent spatial features captured via PCA are critical for accurate swarm state detection.
